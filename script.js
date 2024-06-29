@@ -29,5 +29,34 @@ function calcAge1(birthYear) {
     return 2024 - birthYear;
 }
 
-console.log(calcAge1(1977));
+const age1 = calcAge1(1977);
+
+//console.log(calcAge1(1977));
+
+const calcAge2 = function (birthYear) {
+    return 2024 - birthYear;
+}
+
+const age2 = calcAge2(1991);
+
+
+console.log(age1, age2);
+
+
+// Arrow function
+const calcAge3 = birthYear => 2037 - birthYear;
+
+const age3 = calcAge3(2000);
+console.log(age3);
+
+
+
+const yearsTillRet = (birthYear, firstName) => {
+    const age = 2024 - birthYear;
+    const retirement = 67 - age;
+    return `${firstName} retires in ${retirement} years.`;
+}
+
+console.log(yearsTillRet(1979, 'Elorts'));
+console.log(yearsTillRet(1969, 'Arturas'));
 
