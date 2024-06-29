@@ -60,19 +60,49 @@
 // console.log(yearsTillRet(1979, 'Elorts'));
 // console.log(yearsTillRet(1969, 'Arturas'));
 
-function cutFruitPieces(fruit) {
-    return fruit * 4;
+// function cutFruitPieces(fruit) {
+//     return fruit * 4;
+// }
+
+// function fruitProcessor(apples, oranges) {
+//     const applePieces = cutFruitPieces(apples);
+//     const orangePieces = cutFruitPieces(oranges);
+
+
+
+//     //console.log(apples, oranges);
+//     const juice = `Juce with ${applePieces} apples and ${orangePieces} oranges.`;
+//     return juice;
+// }
+
+// console.log(fruitProcessor(2, 3));
+
+// console.log(yearsTillRet(1979, 'Elorts'));
+// console.log(yearsTillRet(1969, 'Arturas'));
+
+// const yearsTillRet = function (birthYear, firstName) {
+//     const retirement = 67 - age;
+//     const age = 2024 - birthYear;
+//     return `${firstName} retires in ${retirement} years.`;
+// }
+
+const calcAverage = (s1, s2, s3) => (s1 + s2 + s3) / 3;
+
+const checkWinner = function (scoreDolphins, scoreKoalas) {
+    if (scoreDolphins >= scoreKoalas * 2)
+        console.log(`Dolphins win (${scoreDolphins} vs. ${scoreKoalas})`);
+    else if (scoreKoalas >= scoreDolphins * 2)
+        console.log(`KLoalas win (${scoreKoalas} vs. ${scoreDolphins})`);
+    else
+        console.log(`No team wins!`)
 }
 
-function fruitProcessor(apples, oranges) {
-    const applePieces = cutFruitPieces(apples);
-    const orangePieces = cutFruitPieces(oranges);
+const scoreDolphins = calcAverage(44, 23, 71);
+const scoreKoalas = calcAverage(65, 54, 49);
+
+checkWinner(scoreDolphins, scoreKoalas);
 
 
+//   console.log(checkWinner(calcAverage(44, 23, 71), calcAverage(65, 54, 49))); // test data 1
 
-    //console.log(apples, oranges);
-    const juice = `Juce with ${applePieces} apples and ${orangePieces} oranges.`;
-    return juice;
-}
-
-console.log(fruitProcessor(2, 3));
+//console.log(checkWinner(calcAverage(85, 54, 41), calcAverage(23, 34, 27))); // test data 2
