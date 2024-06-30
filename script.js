@@ -86,23 +86,38 @@
 //     return `${firstName} retires in ${retirement} years.`;
 // }
 
-const calcAverage = (s1, s2, s3) => (s1 + s2 + s3) / 3;
+// const calcAverage = (s1, s2, s3) => (s1 + s2 + s3) / 3;
 
-const checkWinner = function (scoreDolphins, scoreKoalas) {
-    if (scoreDolphins >= scoreKoalas * 2)
-        console.log(`Dolphins win (${scoreDolphins} vs. ${scoreKoalas})`);
-    else if (scoreKoalas >= scoreDolphins * 2)
-        console.log(`KLoalas win (${scoreKoalas} vs. ${scoreDolphins})`);
-    else
-        console.log(`No team wins!`)
-}
+// const checkWinner = function (scoreDolphins, scoreKoalas) {
+//     if (scoreDolphins >= scoreKoalas * 2)
+//         console.log(`Dolphins win (${scoreDolphins} vs. ${scoreKoalas})`);
+//     else if (scoreKoalas >= scoreDolphins * 2)
+//         console.log(`KLoalas win (${scoreKoalas} vs. ${scoreDolphins})`);
+//     else
+//         console.log(`No team wins!`)
+// }
 
-const scoreDolphins = calcAverage(44, 23, 71);
-const scoreKoalas = calcAverage(65, 54, 49);
+// const scoreDolphins = calcAverage(44, 23, 71);
+// const scoreKoalas = calcAverage(65, 54, 49);
 
-checkWinner(scoreDolphins, scoreKoalas);
+// checkWinner(scoreDolphins, scoreKoalas);
 
 
 //   console.log(checkWinner(calcAverage(44, 23, 71), calcAverage(65, 54, 49))); // test data 1
 
 //console.log(checkWinner(calcAverage(85, 54, 41), calcAverage(23, 34, 27))); // test data 2
+
+const years1 = new Array(1221, 1331, 1441, 1551);
+
+const years2 = [1661, 1771, 1881, 1991];
+
+console.log(years1[3]);
+
+console.log(years2);
+
+const jonas = ['jonas', 2 * 2, years1]
+
+console.log(jonas[1]);
+
+console.log(jonas.length);
+
