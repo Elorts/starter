@@ -256,3 +256,10 @@ if (mark.calcBMI() > john.calcBMI()) {
     console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})!`);
 }
 
+const a = [];
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights: ${rep} 🥓`);
+    a.push(rep);
+}
+
+console.log(a);
