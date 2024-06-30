@@ -107,64 +107,115 @@
 
 //console.log(checkWinner(calcAverage(85, 54, 41), calcAverage(23, 34, 27))); // test data 2
 
-const years1 = new Array(1221, 1331, 1441, 1551);
+// const years1 = new Array(1221, 1331, 1441, 1551);
 
-const years2 = [1661, 1771, 1881, 1991];
+// const years2 = [1661, 1771, 1881, 1991];
 
-console.log(years1[3]);
+// console.log(years1[3]);
 
-console.log(years2);
+// console.log(years2);
 
-const jonas = ['jonas', 2 * 2, years1]
+// const jonas = ['jonas', 2 * 2, years1]
 
-console.log(jonas[1]);
+// console.log(jonas[1]);
 
-console.log(jonas.length);
+// console.log(jonas.length);
 
-const years3 = [1661, 1771, 1881, 1991];
+// const years3 = [1661, 1771, 1881, 1991];
 
-const newArr = years3.push('Valious');
+// const newArr = years3.push('Valious');
 
-console.log(years3, `Length: ${years3.length}`);
+// console.log(years3, `Length: ${years3.length}`);
 
-console.log(newArr);
-
-
-years3.unshift('Varveklis');
-
-console.log(years3, `Length: ${years3.length}`);
-
-// remove last element - pop
-// || first || - shift
-
-// 
+// console.log(newArr);
 
 
-const calcTip = function (bill) {
-    if (50 <= bill && bill <= 300)
-        return bill * 0.15;
-    else
-        return bill * 0.2;
-}
+// years3.unshift('Varveklis');
 
-const bills = [125, 555, 44];
+// console.log(years3, `Length: ${years3.length}`);
 
-const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+// // remove last element - pop
+// // || first || - shift
 
-const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+// // 
 
-console.log(tips);
-console.log(totals);
+
+// const calcTip = function (bill) {
+//     if (50 <= bill && bill <= 300)
+//         return bill * 0.15;
+//     else
+//         return bill * 0.2;
+// }
+
+// const bills = [125, 555, 44];
+
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+
+// const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+
+// console.log(tips);
+// console.log(totals);
 
 // objects:
+
+// const deividas = {
+//     firstName: 'Deividas',
+//     lastName: 'Strole',
+//     job: 'lazy',
+//     friends: ['computer', 'TV', 'a lizard on a hike'],
+
+//     calcAge: function (birthYear) {
+//         return 2024 - birthYear;
+//     }
+// };
+
+// // console.log(deividas);
+
+// console.log(deividas.friends);
+
+// // const interest = prompt(`firstName, lastName, job, friends`);
+
+// // console.log(deividas[interest]);
+
+// deividas.location = 'LA';
+
+// console.log(`${deividas.firstName} has ${deividas.friends.length} friends, and his best friend is called ${deividas.friends[0]}`);
+
 
 const deividas = {
     firstName: 'Deividas',
     lastName: 'Strole',
     job: 'lazy',
-    friends: ['computer', 'TV', 'a lizard on a hike']
+    friends: ['computer', 'TV', 'a lizard on a hike'],
+    birthYear: 1979,
+    hasLicense: false,
+
+    // calcAge: function () {
+    //     return 2024 - this.birthYear;
+    // }
+
+    calcAge: function () {
+        this.age = 2024 - this.birthYear;
+        return this.age;
+    },
+
+
+    getSummary: function () {
+        return `${this.firstName} is a ${this.calcAge()} old ${this.job}, and he ${this.hasLicense ? 'has' : 'has no'} driver's lic.`
+    }
 };
 
-console.log(deividas);
+console.log(deividas.calcAge());
 
-console.log(deividas.friends);
+console.log(deividas.age);
+
+console.log(deividas);
+// console.log(deividas[`calcAge`](1979));
+
+// const lic = function () {
+//     return hasLicense ? 'has' : 'has no';
+// }
+
+// console.log(`${deividas.firstName} is a ${deividas.age} old programmer, and he ${lic} driver's license.`);
+
+console.log(deividas.getSummary());
