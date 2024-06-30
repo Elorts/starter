@@ -121,3 +121,10 @@ console.log(jonas[1]);
 
 console.log(jonas.length);
 
+const years3 = [1661, 1771, 1881, 1991];
+
+const newArr = years3.push('Valious');
+
+console.log(years3, `Length: ${years3.length}`);
+
+console.log(newArr);
