@@ -256,7 +256,3 @@ if (mark.calcBMI() > john.calcBMI()) {
     console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})!`);
 }
 
-// console.log(mark.calcBMI());
-// console.log(john.calcBMI());
-
-// console.log(`${(mark.calcBMI() > john.calcBMI()) ? "Mark Miller's BMI "`);
