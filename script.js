@@ -156,3 +156,15 @@ const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 console.log(tips);
 console.log(totals);
 
+// objects:
+
+const deividas = {
+    firstName: 'Deividas',
+    lastName: 'Strole',
+    job: 'lazy',
+    friends: ['computer', 'TV', 'a lizard on a hike']
+};
+
+console.log(deividas);
+
+console.log(deividas.friends);
