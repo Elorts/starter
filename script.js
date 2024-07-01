@@ -268,9 +268,43 @@ const years = [1991, 2007, 1969, 2020];
 const ages = [];
 
 for (let i = 0; i < years.length; i++) {
-    //ages[i] = 2024 - years[i];
     ages.push(2024 - years[i]);
 }
 
 console.log(ages);
+
+// continue and break
+
+console.log(`***********************************************************`);
+
+
+const calcTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
+
+/* Write your code below. Good luck! 🙂 */
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+
+for (let i = 0; i < bills.length; i++) {
+    tips.push(calcTip(bills[i]));
+    totals.push(tips[i] + bills[i]);
+}
+
+const calcAverage = function (arr) {
+    let sum = 0;
+    const arrLength = bills.length;
+    for (let i = 0; i < arrLength; i++) {
+        sum += arr[i];
+    }
+
+    return sum / arrLength;
+}
+
+console.log(totals);
+console.log(tips);
+console.log(`Average: ${calcAverage(tips)}`);
+
 
